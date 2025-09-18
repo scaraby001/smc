@@ -1,1 +1,1 @@
-# Software and methodological complex v1.01
+# Программно-методический комплекс
