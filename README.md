@@ -15,25 +15,25 @@
 
 * В файле 'main.c' добавить следующие строки:
 
-'''c
+```c
 /* USER CODE BEGIN Includes */
 
 #include "tasks.h"
 
 /* USER CODE END Includes */
-'''
+```
 
-'''c
+```c
   /* USER CODE BEGIN 2 */
 
   tasks.power->state = CASE_START;
 
   /* USER CODE END 2 */
-'''
+```
 
-'''c
+```c
   tasks_loop();
 
 /* USER CODE END WHILE */
-'''
+```
     
