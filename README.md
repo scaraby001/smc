@@ -10,6 +10,15 @@
 * Toolchain / IDE выбрать STM32CubeIDE.
 * Firmware Packadge Name and Version выбрать STM32Cube FW_F4 V1.28.0.
 * Выполнить команду GENERATE CODE
+* После успешной генерации проекта, выполнить Open Project
+
+### Настройка CubeIDE
+
+* Выполнить пункт меню Project/Properties/"C/C++ General"
+* Раскрыть выпадающий список и выполнить Path and Symbols
+* Вкладка Source Location выполнить Add Folder и добавить папку Apart
+* Вкладка Includes выполнить Add и добавить Apart/Modules, Apart/Tasks
+* Выполнить компиляцию и программирование
 
 ### Основная программа
 
@@ -26,7 +35,7 @@
 ```c
   /* USER CODE BEGIN 2 */
 
-  tasks.power->state = CASE_START;
+  TASK_START(tasks.power->state);
 
   /* USER CODE END 2 */
 ```
